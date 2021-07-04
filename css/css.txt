@@ -1,0 +1,470 @@
+-----------------------------------------------------------------------CSS Starts ------------------------------------------------------
+1- Introduction
+css stands for cascading style sheet. css is the integral part for naking attractive web page. we style the html elements by using css
+
+
+difference between CSS and HTML
+
+1-  HTML stands for hypertext markup language. 
+    CSS stands for cascading style sheets.
+
+2-  HTML is a formating language for a webpage.(that means you can formate your webpage using HTML. you can left align and right align.
+    CSS is called reformating language for a webpage.
+
+3-  HTML is a structural language for a webpage and used to describe the structureof a webpage.
+    CSS is a presentational language for webpage and used to describe the presentation of a webpage.
+
+Defination
+4-  the standard markup language for describing the structure of a webpage.
+    a style sheet language for describing the presentation and design of webpages including colors, fonts and layouts.
+
+
+Implementation
+5-  html is for content and structure of a webpage.
+    css is mainly for presentation and design
+
+
+
+Architecture
+6-  html uses tags that contain contents
+    in css Selectors are declared using block statement syntax.
+
+
+
+Dependency
+7-  HTML syntax and structure formats cannot be used in CSS style sheets.
+    CSS is independent of html and it can be used with any XML based markup language.
+
+
+
+
+
+
+multiple style sheets can be applied to the same webpage. these style sheets are collection of style rules that tells the browser how various styles are applied to the HTML tags to present the document.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+2- limitations of css
+we add designs , affects, design asthetics using css on html page. but we cant make interactive, dynamic and real time based website by using only html and css. like we cant make a game using html and css.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+3-  for styling the web pages we consider that each html element is in the hypothetical box. by considering this we can design them.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+4- CSS associate SR with HTML elements.
+ css has all emphasis on styles. styles are the properties of css. to create a style rule we first create a style name or property name and then we assign a vlaue to the style name or property name by using colon
+property-name: value;    this indicates declaring a style rule.
+
+css works by associating style rule with an html element. these rules governed how the content of specified element should br displayed.
+
+A CSS rule contain two parts, a selector and a declaration, for example  P{Color: grey;} in this example "P" is selector and the other thing is declaration. here "P" indicating a paragraph. which means all paragraphs should be displayed in grey color. selectors are actually html elements. we can apply rules on more than on element and we differenriate them by a comma like   h1,P{Color: grey;}
+
+Declaration is sippleted in two parts,  {Property: Value;}
+
+h1,h2,h3{
+   
+  font-family: 	Arial;
+  color:  yellow;     
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Rules</title>
+    <style>
+        h1,
+        h2 {
+            color: rgb(0, 0, 255);
+        }
+        
+        body {
+            background-color: lavender;
+        }
+        
+        p {
+            background-color: lime;
+        }
+        
+        ol {
+            color: maroon;
+        }
+        
+        ul {
+            color: plum;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This content is about Science</h1>
+    <p>Science is the knowledge gaining by observation and experimentation</p>
+    <h2>Areas of Science</h2>
+    <p>Science is divided into two categories</p>
+    <ol>
+        <li>Physical Sciences</li>
+        <ul>
+            <li>Physics</li>
+            <ul>
+                <li>Nuclear Physics</li>
+                <li>Physical Optics</li>
+                <li>Environmental Physics</li>
+                <li>Atomic Physics</li>
+            </ul>
+            <li>Chemistry</li>
+            <ul>
+                <li>Organic Chemistry</li>
+                <li>Inorganic Chemistry</li>
+            </ul>
+        </ul>
+        <li>Biological Sciences</li>
+        <ul>
+            <li>
+                Biology
+                <ul>
+                    <li>Zoology</li>
+                    <li>Botany</li>
+                    <li>Ambriology</li>
+                </ul>
+            </li>
+        </ul>
+    </ol>
+
+</body>
+
+</html>
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+5-Types of CSS
+CSS is used to set the styles of html tags. We can use CSS in html page by using three methods 
+1- inline CSS (used to apply styles on individual tags)
+2- internal CSS (as the above example)
+3- external CSS (make another  file with .css extension and link it in HTML page)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+6- inline CSS
+
+< h1 style(property : value;)>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Inline CSS</title>
+</head>
+
+<body style="background-color: thistle;">
+    <h1 style="background-color: coral;">This content is about Science</h1>
+    <p style="background-color: cornsilk;">Science is the knowledge gaining by observation and experimentation</p>
+    <h2 style="color: red;">Areas of Science</h2>
+    <p>Science is divided into two categories</p>
+    <ol>
+        <li>Physical Sciences</li>
+        <ul>
+            <li>Physics</li>
+            <ul>
+                <li>Nuclear Physics</li>
+                <li>Physical Optics</li>
+                <li>Environmental Physics</li>
+                <li>Atomic Physics</li>
+            </ul>
+            <li>Chemistry</li>
+            <ul>
+                <li>Organic Chemistry</li>
+                <li>Inorganic Chemistry</li>
+            </ul>
+        </ul>
+        <li>Biological Sciences</li>
+        <ul>
+            <li>
+                Biology
+                <ul>
+                    <li>Zoology</li>
+                    <li>Botany</li>
+                    <li>Ambriology</li>
+                </ul>
+            </li>
+        </ul>
+    </ol>
+
+</body>
+
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+7- Internal and embedded CSS
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Rules</title>
+    <style>
+        h1,
+        h2 {
+            color: rgb(0, 0, 255);
+        }
+        
+        body {
+            background-color: lavender;
+        }
+        
+        p {
+            background-color: lime;
+        }
+        
+        ol {
+            color: maroon;
+        }
+        
+        ul {
+            color: plum;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This content is about Science</h1>
+    <p>Science is the knowledge gaining by observation and experimentation</p>
+    <h2>Areas of Science</h2>
+    <p>Science is divided into two categories</p>
+    <ol>
+        <li>Physical Sciences</li>
+        <ul>
+            <li>Physics</li>
+            <ul>
+                <li>Nuclear Physics</li>
+                <li>Physical Optics</li>
+                <li>Environmental Physics</li>
+                <li>Atomic Physics</li>
+            </ul>
+            <li>Chemistry</li>
+            <ul>
+                <li>Organic Chemistry</li>
+                <li>Inorganic Chemistry</li>
+            </ul>
+        </ul>
+        <li>Biological Sciences</li>
+        <ul>
+            <li>
+                Biology
+                <ul>
+                    <li>Zoology</li>
+                    <li>Botany</li>
+                    <li>Ambriology</li>
+                </ul>
+            </li>
+        </ul>
+    </ol>
+
+</body>
+
+</html>
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+8- External CSS
+
+
+body {
+    background-color: black;
+}
+
+h1,
+h2 {
+    color: whitesmoke;
+}
+
+ol {
+    color: whitesmoke;
+}
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+9- CSS Selectors
+
+CSS selectors allow us to select and allow html elements. css selectors are used to find all selected html elements based on their ID's, class, type attributes etc. CSS selectors are case sensitive so they must match with element names and attribute values exactly. we'll discuss 8 selectors here
+
+1- universal selector (*)
+   this selector targets all the elements of the page. means we can apply any action on all elements at a time.
+
+	*{property-name: value}
+* {
+    background-color: moccasin;
+    font-family: 'Times New Roman';
+}
+
+
+2- Type Selector (,)
+   type selector is also known as element selector. by using type selector we can apply styling to a single element. we just write the element name and all done. if we want to apply same styling on multiple elements, we write their names and differentiate them with (,) as we have done in previous codes.
+
+	a,b,c{Property-name: value;}
+
+th {
+    background-color: blue;
+}
+
+
+
+3- Class selector( . )
+   class selector selects element with the specific class attribute. 
+	body {
+	background-color: thistle;
+	}
+
+	.main-branch {
+	    color: teal;
+	}
+
+	.sub-branch {
+	color: teal;
+	}
+
+	.branch {
+	    color: yellow;
+	}
+	p.cnc {
+	color: value;
+	}
+
+
+4-  ID Selector (#)
+    styles the element with the specified ID. it uses the ID attribute of an HTML element to select a specific element. ID should be unique within a page. ID selector
+    is used if you want to select a single unique element..
+    
+    #id-name { property-name: value;}
+
+
+5-  Child Selector. (>)
+    it will target the direct child of a parent element and will apply styles on it
+
+    parent > child { property-name: value;}
+      
+	ol>li {
+	color: yellow;
+	}
+	
+	ol>li {
+	    color: yellow;
+	}
+	
+	li>ul>li {
+	    color: yellowgreen;
+	}
+
+
+6-   Descendant Selector ( ) "its a space"
+     
+     this selector is used to select the elements inside the elements. it matches an element that is descendant of another specified element not direct child of that
+     element. its like a parent child but it selects that child which is not direct child of a parest tag
+     
+     
+	li {
+	    color: indigo;
+	}
+	
+	ul li {
+	    color: hotpink;
+	}  
+
+
+7- Adjacent Sibling Selectors
+   
+   is used to select element that is placed immediately after that inside the first specified element. its not like child-parent. in this siblings are selected.
+   all siblings are on the same level.
+
+	ul+li {
+	color: mediumturquoise;
+	}
+
+8-  General Sibling Selector
+
+    is used to select all elements that are siblings(not child) of an other
+
+	h1~p {
+	color: mediumturquoise;
+	}
+
+     here all p's will be selected after h1 but p's should be on the same level on the same level.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+10- How CSS rules Cascade
+    if we apply more than one rule on an element than which rule will be presidence.????
+    
+	if we apply more that one rule on an element, than last rule will be applied.
+
+>> specificity
+
+jo rule jitna zyada specific ho ga wo hi apply hoga means??? means jo rule jitna detail sy byan kiya jaye ga wo implement ho jaye ga. if we want to assign priority to any rule we'll use "!important" attribute after the property value.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+11- Inheritence
+ 
+ css contains a collection of style rules . if we apply these rules on parents, by default childs inherited that rules. means that rules are also applied on the childs. this is called inheritence. we have different elements which stop this inheritence.
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Inheritence</title>
+    <style>
+        body {
+            color: blue;
+            padding: 20px;
+        }
+        
+        p {
+            padding: inherit;
+        }
+        
+        div {
+            color: lawngreen;
+        }
+        
+        a {
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Rules</h1>
+    <p>The woman empowerment division of the <i>Presidential initiative of artificial intelligence and computing</i> is comitted to the <b>eompowerment</b> and autonomy of woman in pakistan</p>
+    <p>PIAIC woman in technology <i>WIT</i> is a <b>group</b> dedicated to providing oppertunities to women</p>
+    <div>to find out more PIAIC WIT, please visit
+        <a href="http://www.piaic.org/wit"> PIAIC WIT</a>
+    </div>
+</body>
+
+</html>
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
